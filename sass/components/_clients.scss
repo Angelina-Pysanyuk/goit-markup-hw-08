@@ -1,12 +1,11 @@
 .clients {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   flex-wrap: wrap;
 }
 
 .clients__item {
   margin-bottom: 30px;
-  margin-right: 30px;
 
   &:last-child {
     margin-bottom: 0;
@@ -42,5 +41,48 @@
   .clients__link:hover &,
   .clients__link:focus & {
     fill: var(--accent-blue-color);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .clients {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .clients__item {
+    margin-bottom: 30px;
+    margin-right: 0;
+
+    &:nth-child(n + 4) {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+
+  .clients__item {
+    margin-right: 30px;
+    margin-bottom: 0;
+
+    &:nth-child(even) {
+      margin-right: 30px;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .clients__link {
+    width: 170px;
+    height: 92px;
   }
 }

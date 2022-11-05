@@ -200,10 +200,10 @@
   fill: var(--main-title-color);
 
   transition: fill 250ms var(--timing-function);
+}
 
-  .main-form__input:focus & {
-    fill: var(--accent-blue-color);
-  }
+.main-form__input:focus + .main-form__icon {
+  fill: var(--accent-blue-color);
 }
 
 .main-form__checkmark {
@@ -232,4 +232,11 @@
 
 .main-form__input--checkbox:focus + .main-form__checkmark {
   border-color: var(--accent-blue-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    min-height: 581px;
+    min-width: 528px;
+  }
 }

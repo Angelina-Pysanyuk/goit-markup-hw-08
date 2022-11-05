@@ -1,4 +1,5 @@
 .section--no-padding-top {
+  display: none;
   padding-top: 0;
 }
 
@@ -36,4 +37,10 @@
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
+}
+
+@media screen and (min-width: 1200px) {
+  .section--no-padding-top {
+    display: block;
+  }
 }
