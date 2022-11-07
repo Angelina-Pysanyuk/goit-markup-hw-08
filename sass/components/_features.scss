@@ -60,6 +60,7 @@
 @media screen and (min-width: 1200px) {
   .features {
     align-items: flex-start;
+    flex-wrap: nowrap;
   }
 
   .features__element {

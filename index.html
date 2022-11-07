@@ -67,6 +67,7 @@
           </li>
         </ul>
       </div>
+      <!-- Mobile Menu -->
       <div class="mobile-menu" data-menu>
         <div class="container mobile-menu__container">
           <button class="mobile-menu__close-btn" data-menu-close>
@@ -89,44 +90,48 @@
               <a class="mobile-nav__link" href="#">Контакти</a>
             </li>
           </ul>
-          <ul class="mobile-contacts">
-            <li class="mobile-contacts__item">
-              <a class="mobile-contacts__link-phone" href="tel:+380961111111"
-                >+38 096 111 11 11</a
-              >
-            </li>
-            <li class="mobile-contacts__item">
-              <a
-                class="mobile-contacts__link-email"
-                href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
-              >
-            </li>
-          </ul>
-          <ul class="mobile-social">
-            <li class="mobile-social__item">
-              <a class="mobile-social__link" href="">Instagram</a>
-            </li>
-            <li class="mobile-social__item">
-              <a class="mobile-social__link" href="">Twitter</a>
-            </li>
-            <li class="mobile-social__item">
-              <a class="mobile-social__link" href="">Facebook</a>
-            </li>
-            <li class="mobile-social__item">
-              <a class="mobile-social__link" href="">LinkedIn</a>
-            </li>
-          </ul>
+          <div>
+            <ul class="mobile-contacts">
+              <li class="mobile-contacts__item">
+                <a class="mobile-contacts__link-phone" href="tel:+380961111111"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+              <li class="mobile-contacts__item">
+                <a
+                  class="mobile-contacts__link-email"
+                  href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+            <ul class="mobile-social">
+              <li class="mobile-social__item">
+                <a class="mobile-social__link" href="">Instagram</a>
+              </li>
+              <li class="mobile-social__item">
+                <a class="mobile-social__link" href="">Twitter</a>
+              </li>
+              <li class="mobile-social__item">
+                <a class="mobile-social__link" href="">Facebook</a>
+              </li>
+              <li class="mobile-social__item">
+                <a class="mobile-social__link" href="">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </header>
     <!-- Hero -->
     <main>
       <section class="hero hero--overlay">
-        <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
-        <button data-modal-open type="button" class="button hero__button">
-          Замовити послугу
-        </button>
+        <div class="container">
+          <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
+          <button data-modal-open type="button" class="button hero__button">
+            Замовити послугу
+          </button>
+        </div>
       </section>
       <!-- Features Section -->
       <section class="section">
@@ -192,7 +197,7 @@
               <picture>
                 <source
                   srcset="
-                    ./images/tablet-and-keyboard-desktop.jpeg 1x,
+                    ./images/tablet-and-keyboard-desktop.jpeg    1x,
                     ./images/tablet-and-keyboard-desktop@2x.jpeg 2x
                   "
                   media="(min-width: 1200px)"
@@ -210,34 +215,36 @@
               <picture>
                 <source
                   srcset="
-                    ./images/laptop-and-phone-desktop.jpeg 1x,
+                    ./images/laptop-and-phone-desktop.jpeg    1x,
                     ./images/laptop-and-phone-desktop@2x.jpeg 2x
                   "
                   media="(min-width: 1200px)"
                 />
-              <img
-                class="our-work__image"
-                src="./images/laptop-and-phone-desktop.jpeg"
-                alt="person looking at a phone in front of a laptop"
-                width="370"
-              />
+                <img
+                  class="our-work__image"
+                  src="./images/laptop-and-phone-desktop.jpeg"
+                  alt="person looking at a phone in front of a laptop"
+                  width="370"
+                />
+              </picture>
               <h3 class="our-work__title">Мобільні додатки</h3>
             </li>
             <li class="our-work__item">
               <picture>
                 <source
                   srcset="
-                    ./images/color-palette-on-tablet-desktop.jpeg 1x,
+                    ./images/color-palette-on-tablet-desktop.jpeg    1x,
                     ./images/color-palette-on-tablet-desktop@2x.jpeg 2x
                   "
                   media="(min-width: 1200px)"
                 />
-              <img
-                class="our-work__image"
-                src="./images/color-palette-on-tablet-desktop.jpeg"
-                alt="person looking at a color palette"
-                width="370"
-              />
+                <img
+                  class="our-work__image"
+                  src="./images/color-palette-on-tablet-desktop.jpeg"
+                  alt="person looking at a color palette"
+                  width="370"
+                />
+              </picture>
               <h3 class="our-work__title">Дизайнерські рішення</h3>
             </li>
           </ul>
@@ -252,30 +259,32 @@
               <picture>
                 <source
                   srcset="
-                    ./images/Igor-desktop.jpeg 1x,
+                    ./images/Igor-desktop.jpeg    1x,
                     ./images/Igor-desktop@2x.jpeg 2x
                   "
                   media="(min-width: 1200px)"
                 />
                 <source
-                srcset="
-                  ./images/Igor-tablet.jpeg 1x,
-                  ./images/Igor-tablet@2x.jpeg 2x
-                "
-                media="(min-width: 768px)"
-              />
-              <source
-              srcset="
-                ./images/Igor-mob.jpeg 1x,
-                ./images/Igor-mob@2x.jpeg 2x
-              "
-              media="(min-width: 280px)"
-            />
-              <img
-                class="team__image"
-                alt="Igor Demyznenko"
-                width="270"
-              />
+                  srcset="
+                    ./images/Igor-tablet.jpeg    1x,
+                    ./images/Igor-tablet@2x.jpeg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/Igor-mob.jpeg    1x,
+                    ./images/Igor-mob@2x.jpeg 2x
+                  "
+                  media="(min-width: 280px)"
+                />
+                <img
+                  class="team__image"
+                  src="./images/Igor-mob.jpeg"
+                  alt="Igor Demyznenko"
+                  width="270"
+                />
+              </picture>
               <div class="team__box">
                 <h3 class="team__title">Ігор Дем'яненко</h3>
                 <p class="team__text">Product Designer</p>
@@ -315,30 +324,32 @@
               <picture>
                 <source
                   srcset="
-                    ./images/Olga-desktop.jpeg 1x,
+                    ./images/Olga-desktop.jpeg    1x,
                     ./images/Olga-desktop@2x.jpeg 2x
                   "
                   media="(min-width: 1200px)"
                 />
                 <source
-                srcset="
-                  ./images/Olga-tablet.jpeg 1x,
-                  ./images/Olga-tablet@2x.jpeg 2x
-                "
-                media="(min-width: 768px)"
-              />
-              <source
-              srcset="
-                ./images/Olga-mob.jpeg 1x,
-                ./images/Olga-mob@2x.jpeg 2x
-              "
-              media="(min-width: 280px)"
-            />
-              <img
-                class="team__image"
-                alt="Olga Repina"
-                width="270"
-              />
+                  srcset="
+                    ./images/Olga-tablet.jpeg    1x,
+                    ./images/Olga-tablet@2x.jpeg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/Olga-mob.jpeg    1x,
+                    ./images/Olga-mob@2x.jpeg 2x
+                  "
+                  media="(min-width: 280px)"
+                />
+                <img
+                  class="team__image"
+                  src="./images/Olga-mob.jpeg"
+                  alt="Olga Repina"
+                  width="270"
+                />
+              </picture>
               <div class="team__box">
                 <h3 class="team__title">Ольга Рєпіна</h3>
                 <p class="team__text">Frontend Developer</p>
@@ -378,30 +389,32 @@
               <picture>
                 <source
                   srcset="
-                    ./images/Mykola-desktop.jpeg 1x,
+                    ./images/Mykola-desktop.jpeg    1x,
                     ./images/Mykola-desktop@2x.jpeg 2x
                   "
                   media="(min-width: 1200px)"
                 />
                 <source
-                srcset="
-                  ./images/Mykola-tablet.jpeg 1x,
-                  ./images/Mykola-tablet@2x.jpeg 2x
-                "
-                media="(min-width: 768px)"
-              />
-              <source
-              srcset="
-                ./images/Mykola-mob.jpeg 1x,
-                ./images/Mykola-mob@2x.jpeg 2x
-              "
-              media="(min-width: 280px)"
-            />
-              <img
-                class="team__image"
-                alt="Mykola Tarasov"
-                width="270"
-              />
+                  srcset="
+                    ./images/Mykola-tablet.jpeg    1x,
+                    ./images/Mykola-tablet@2x.jpeg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/Mykola-mob.jpeg    1x,
+                    ./images/Mykola-mob@2x.jpeg 2x
+                  "
+                  media="(min-width: 280px)"
+                />
+                <img
+                  class="team__image"
+                  src="./images/Mykola-mob.jpeg"
+                  alt="Mykola Tarasov"
+                  width="270"
+                />
+              </picture>
               <div class="team__box">
                 <h3 class="team__title">Микола Тарасов</h3>
                 <p class="team__text">Marketing</p>
@@ -441,30 +454,32 @@
               <picture>
                 <source
                   srcset="
-                    ./images/Mykhailo-desktop.jpeg 1x,
+                    ./images/Mykhailo-desktop.jpeg    1x,
                     ./images/Mykhailo-desktop@2x.jpeg 2x
                   "
                   media="(min-width: 1200px)"
                 />
                 <source
-                srcset="
-                  ./images/Mykhailo-tablet.jpeg 1x,
-                  ./images/Mykhailo-tablet@2x.jpeg 2x
-                "
-                media="(min-width: 768px)"
-              />
-              <source
-              srcset="
-                ./images/Mykhailo-mob.jpeg 1x,
-                ./images/Mykhailo-mob@2x.jpeg 2x
-              "
-              media="(min-width: 280px)"
-            />
-              <img
-                class="team__image"
-                alt="Mykhailo Ermakov"
-                width="270"
-              />
+                  srcset="
+                    ./images/Mykhailo-tablet.jpeg    1x,
+                    ./images/Mykhailo-tablet@2x.jpeg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/Mykhailo-mob.jpeg    1x,
+                    ./images/Mykhailo-mob@2x.jpeg 2x
+                  "
+                  media="(min-width: 280px)"
+                />
+                <img
+                  class="team__image"
+                  src="./images/Mykhailo-mob.jpeg"
+                  alt="Mykhailo Ermakov"
+                  width="270"
+                />
+              </picture>
               <div class="team__box">
                 <h3 class="team__title">Михайло Єрмаков</h3>
                 <p class="team__text">UI Designer</p>
@@ -622,30 +637,27 @@
             </div>
           </div>
           <!-- Form Footer -->
-          <div class="footer__block">
-            <div class="subscribe">
-              <form class="subscribe__form">
-                <label class="subscribe__title" for="user-mail"
-                  >Підпишіться на розсилку</label
-                >
-                <div class="subscribe__field">
-                  <input
-                    type="email"
-                    name="user-mail"
-                    id="user-mail"
-                    placeholder="E-mail"
-                    class="subscribe__input"
-                  />
-                  <button class="button subscribe__button" type="submit">
-                    Підписатися
-                    <svg class="button__icon" width="24" height="24">
-                      <use href="./images/icons.svg#icon-paper-plane"></use>
-                    </svg>
-                  </button>
-                </div>
-              </form>
+
+          <form class="subscribe">
+            <label class="subscribe__title" for="user-mail"
+              >Підпишіться на розсилку</label
+            >
+            <div class="subscribe__field">
+              <input
+                type="email"
+                name="user-mail"
+                id="user-mail"
+                placeholder="E-mail"
+                class="subscribe__input"
+              />
+              <button class="button subscribe__button" type="submit">
+                Підписатися
+                <svg class="button__icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-paper-plane"></use>
+                </svg>
+              </button>
             </div>
-          </div>
+          </form>
         </div>
       </div>
     </footer>

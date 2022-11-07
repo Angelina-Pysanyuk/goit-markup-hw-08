@@ -146,6 +146,10 @@
 }
 
 @media screen and (min-width: 768px) {
+  .header__container {
+    align-items: center;
+  }
+
   .logo {
     padding-top: 26px;
     padding-bottom: 26px;
@@ -162,13 +166,15 @@
     display: inline-block;
 
     margin-right: 0;
-    margin-top: 21px;
-    margin-bottom: 21px;
   }
 
   .contacts__item {
     margin-right: 0;
     margin-bottom: 10px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 
   .contacts__link {

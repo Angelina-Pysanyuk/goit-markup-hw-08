@@ -22,8 +22,15 @@
   }
 
   .mobile-menu__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
     position: relative;
     padding-left: 25px;
+    padding-top: 33px;
+    padding-bottom: 48px;
+    height: 100%;
   }
 
   .mobile-menu__close-btn {
@@ -44,11 +51,7 @@
     }
   }
 
-  .mobile-nav {
-    padding-top: 33px;
-  }
-
-  .mobile-nav__item {
+  .mobile-nav__item:not(:last-child) {
     margin-bottom: 32px;
   }
 
@@ -72,7 +75,6 @@
   }
 
   .mobile-contacts {
-    margin-top: 306px;
     margin-bottom: 64px;
   }
 
