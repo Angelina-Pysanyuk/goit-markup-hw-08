@@ -67,6 +67,7 @@
           </li>
         </ul>
       </div>
+      <!-- Mobile Menu -->
       <div class="mobile-menu" data-menu>
         <div class="container mobile-menu__container">
           <button class="mobile-menu__close-btn" data-menu-close>
@@ -89,34 +90,36 @@
               <a class="mobile-nav__link" href="#">Контакти</a>
             </li>
           </ul>
-          <ul class="mobile-contacts">
-            <li class="mobile-contacts__item">
-              <a class="mobile-contacts__link-phone" href="tel:+380961111111"
-                >+38 096 111 11 11</a
-              >
-            </li>
-            <li class="mobile-contacts__item">
-              <a
-                class="mobile-contacts__link-email"
-                href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
-              >
-            </li>
-          </ul>
-          <ul class="mobile-social">
-            <li class="mobile-social__item">
-              <a class="mobile-social__link" href="">Instagram</a>
-            </li>
-            <li class="mobile-social__item">
-              <a class="mobile-social__link" href="">Twitter</a>
-            </li>
-            <li class="mobile-social__item">
-              <a class="mobile-social__link" href="">Facebook</a>
-            </li>
-            <li class="mobile-social__item">
-              <a class="mobile-social__link" href="">LinkedIn</a>
-            </li>
-          </ul>
+          <div>
+            <ul class="mobile-contacts">
+              <li class="mobile-contacts__item">
+                <a class="mobile-contacts__link-phone" href="tel:+380961111111"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+              <li class="mobile-contacts__item">
+                <a
+                  class="mobile-contacts__link-email"
+                  href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+            <ul class="mobile-social">
+              <li class="mobile-social__item">
+                <a class="mobile-social__link" href="">Instagram</a>
+              </li>
+              <li class="mobile-social__item">
+                <a class="mobile-social__link" href="">Twitter</a>
+              </li>
+              <li class="mobile-social__item">
+                <a class="mobile-social__link" href="">Facebook</a>
+              </li>
+              <li class="mobile-social__item">
+                <a class="mobile-social__link" href="">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </header>
@@ -147,12 +150,35 @@
             <li class="card__item">
               <a class="card__link" href="">
                 <div class="card__thumb">
-                  <img
-                    class="card__image"
-                    src="./images/techno.jpeg"
-                    alt="laptop opened"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/techno-desktop.jpeg    1x,
+                        ./images/techno-desktop@2x.jpeg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/techno-tablet.jpeg    1x,
+                        ./images/techno-tablet@2x.jpeg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/techno-mob.jpeg    1x,
+                        ./images/techno-mob@2x.jpeg 2x
+                      "
+                      media="(min-width: 280px)"
+                    />
+                    <img
+                      class="card__image"
+                      src="./images/techno-mob.jpeg"
+                      alt="laptop opened"
+                      width="370"
+                    />
+                  </picture>
                   <span class="card__slide"
                     >Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -169,18 +195,41 @@
             <li class="card__item">
               <a class="card__link" href="">
                 <div class="card__thumb">
-                  <img
-                    class="card__image"
-                    src="./images/New-Orlean.jpeg"
-                    alt="two men playing basketball"
-                    width="370"
-                  />
-                  <span class="card__slide"
-                    >Ресурс пропонує комплексні пропозиції з різним рівнем
-                    функціоналу та сервісів. Все це дозволить відвідувачу
-                    отримати вичерпні відомості про компанію чи приватну
-                    особу.</span
-                  >
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/New-Orlean-desktop.jpeg    1x,
+                        ./images/New-Orlean-desktop@2x.jpeg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/New-Orlean-tablet.jpeg    1x,
+                        ./images/New-Orlean-tablet@2x.jpeg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/New-Orlean-mob.jpeg    1x,
+                        ./images/New-Orlean-mob@2x.jpeg 2x
+                      "
+                      media="(min-width: 280px)"
+                    />
+                    <img
+                      class="card__image"
+                      src="./images/New-Orlean-mob.jpeg"
+                      alt="two men playing basketball"
+                      width="370"
+                    />
+                    <span class="card__slide"
+                      >Ресурс пропонує комплексні пропозиції з різним рівнем
+                      функціоналу та сервісів. Все це дозволить відвідувачу
+                      отримати вичерпні відомості про компанію чи приватну
+                      особу.</span
+                    >
+                  </picture>
                 </div>
                 <div class="card__meta">
                   <h2 class="card__title">New Orlean vs Golden Star</h2>
@@ -191,12 +240,35 @@
             <li class="card__item">
               <a class="card__link" href="">
                 <div class="card__thumb">
-                  <img
-                    class="card__image"
-                    src="./images/Seafood.jpeg"
-                    alt="restaurant's logo"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/Seafood-desktop.jpeg    1x,
+                        ./images/Seafood-desktop@2x.jpeg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/Seafood-tablet.jpeg    1x,
+                        ./images/Seafood-tablet@2x.jpeg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/Seafood-mob.jpeg    1x,
+                        ./images/Seafood-mob@2x.jpeg 2x
+                      "
+                      media="(min-width: 280px)"
+                    />
+                    <img
+                      class="card__image"
+                      src="./images/Seafood-mob.jpeg"
+                      alt="restaurant's logo"
+                      width="370"
+                    />
+                  </picture>
                   <span class="card__slide"
                     >Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -213,12 +285,35 @@
             <li class="card__item">
               <a class="card__link" href="">
                 <div class="card__thumb">
-                  <img
-                    class="card__image"
-                    src="./images/Prime.jpeg"
-                    alt="headphones"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/Prime-desktop.jpeg    1x,
+                        ./images/Prime-desktop@2x.jpeg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/Prime-tablet.jpeg    1x,
+                        ./images/Prime-tablet@2x.jpeg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/Prime-mob.jpeg    1x,
+                        ./images/Prime-mob@2x.jpeg 2x
+                      "
+                      media="(min-width: 280px)"
+                    />
+                    <img
+                      class="card__image"
+                      src="./images/Prime-mob.jpeg"
+                      alt="headphones"
+                      width="370"
+                    />
+                  </picture>
                   <span class="card__slide"
                     >Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -235,12 +330,35 @@
             <li class="card__item">
               <a class="card__link" href="">
                 <div class="card__thumb">
-                  <img
-                    class="card__image"
-                    src="./images/Boxes.jpeg"
-                    alt="two boxes"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/Boxes-desktop.jpeg    1x,
+                        ./images/Boxes-desktop@2x.jpeg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/Boxes-tablet.jpeg    1x,
+                        ./images/Boxes-tablet@2x.jpeg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/Boxes-mob.jpeg    1x,
+                        ./images/Boxes-mob@2x.jpeg 2x
+                      "
+                      media="(min-width: 280px)"
+                    />
+                    <img
+                      class="card__image"
+                      src="./images/Boxes-mob.jpeg"
+                      alt="two boxes"
+                      width="370"
+                    />
+                  </picture>
                   <span class="card__slide"
                     >Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -257,12 +375,35 @@
             <li class="card__item">
               <a class="card__link" href="">
                 <div class="card__thumb">
-                  <img
-                    class="card__image"
-                    src="./images/Inspiration.jpeg"
-                    alt="monitor"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/Inspiration-desktop.jpeg    1x,
+                        ./images/Inspiration-desktop@2x.jpeg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/Inspiration-tablet.jpeg    1x,
+                        ./images/Inspiration-tablet@2x.jpeg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/Inspiration-mob.jpeg    1x,
+                        ./images/Inspiration-mob@2x.jpeg 2x
+                      "
+                      media="(min-width: 280px)"
+                    />
+                    <img
+                      class="card__image"
+                      src="./images/Inspiration-mob.jpeg"
+                      alt="monitor"
+                      width="370"
+                    />
+                  </picture>
                   <span class="card__slide"
                     >Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -279,12 +420,35 @@
             <li class="card__item">
               <a class="card__link" href="">
                 <div class="card__thumb">
-                  <img
-                    class="card__image"
-                    src="./images/Limited.jpeg"
-                    alt="book opened"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/Limited-desktop.jpeg    1x,
+                        ./images/Limited-desktop@2x.jpeg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/Inspiration-tablet.jpeg 1x,
+                        ./images/Limited-tablet@2x.jpeg  2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/Limited-mob.jpeg    1x,
+                        ./images/Limited-mob@2x.jpeg 2x
+                      "
+                      media="(min-width: 280px)"
+                    />
+                    <img
+                      class="card__image"
+                      src="./images/Limited-mob.jpeg"
+                      alt="book opened"
+                      width="370"
+                    />
+                  </picture>
                   <span class="card__slide"
                     >Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -301,12 +465,35 @@
             <li class="card__item">
               <a class="card__link" href="">
                 <div class="card__thumb">
-                  <img
-                    class="card__image"
-                    src="./images/LAB.jpeg"
-                    alt="label"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/LAB-desktop.jpeg    1x,
+                        ./images/LAB-desktop@2x.jpeg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/LAB-tablet.jpeg    1x,
+                        ./images/LAB-tablet@2x.jpeg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/LAB-mob.jpeg    1x,
+                        ./images/LAB-mob@2x.jpeg 2x
+                      "
+                      media="(min-width: 280px)"
+                    />
+                    <img
+                      class="card__image"
+                      src="./images/LAB-mob.jpeg"
+                      alt="label"
+                      width="370"
+                    />
+                  </picture>
                   <span class="card__slide"
                     >Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -323,12 +510,35 @@
             <li class="card__item">
               <a class="card__link" href="">
                 <div class="card__thumb">
-                  <img
-                    class="card__image"
-                    src="./images/Growing-Business.jpeg"
-                    alt="person typing on a laptop"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/Growing-Business-desktop.jpeg    1x,
+                        ./images/Growing-Business-desktop@2x.jpeg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/Growing-Business-tablet.jpeg    1x,
+                        ./images/Growing-Business-tablet@2x.jpeg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/Growing-Business-mob.jpeg    1x,
+                        ./images/Growing-Business-mob@2x.jpeg 2x
+                      "
+                      media="(min-width: 280px)"
+                    />
+                    <img
+                      class="card__image"
+                      src="./images/Growing-Business-mob.jpeg"
+                      alt="person typing on a laptop"
+                      width="370"
+                    />
+                  </picture>
                   <span class="card__slide"
                     >Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -414,30 +624,27 @@
             </div>
           </div>
           <!-- Form Footer -->
-          <div class="footer__block">
-            <div class="subscribe">
-              <form class="subscribe__form">
-                <label class="subscribe__title" for="user-mail"
-                  >Підпишіться на розсилку</label
-                >
-                <div class="subscribe__field">
-                  <input
-                    type="email"
-                    name="user-mail"
-                    id="user-mail"
-                    placeholder="E-mail"
-                    class="subscribe__input"
-                  />
-                  <button class="button subscribe__button" type="submit">
-                    Підписатися
-                    <svg class="button__icon" width="24" height="24">
-                      <use href="./images/icons.svg#icon-paper-plane"></use>
-                    </svg>
-                  </button>
-                </div>
-              </form>
+
+          <form class="subscribe">
+            <label class="subscribe__title" for="user-mail"
+              >Підпишіться на розсилку</label
+            >
+            <div class="subscribe__field">
+              <input
+                type="email"
+                name="user-mail"
+                id="user-mail"
+                placeholder="E-mail"
+                class="subscribe__input"
+              />
+              <button class="button subscribe__button" type="submit">
+                Підписатися
+                <svg class="button__icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-paper-plane"></use>
+                </svg>
+              </button>
             </div>
-          </div>
+          </form>
         </div>
       </div>
     </footer>
