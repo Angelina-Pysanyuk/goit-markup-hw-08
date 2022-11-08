@@ -38,13 +38,15 @@
   .features {
     flex-direction: row;
     flex-wrap: wrap;
+    gap: 30px;
   }
 
   .features__item {
     width: 354px;
-    margin-bottom: 30px;
-    &:nth-child(odd) {
-      margin-right: 30px;
+    margin-bottom: 0;
+
+    &:nth-child(3n) {
+      margin-bottom: 0;
     }
   }
 

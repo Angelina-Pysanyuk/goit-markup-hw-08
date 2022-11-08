@@ -588,13 +588,14 @@ textarea {
   .features {
     flex-direction: row;
     flex-wrap: wrap;
+    gap: 30px;
   }
   .features__item {
     width: 354px;
-    margin-bottom: 30px;
+    margin-bottom: 0;
   }
-  .features__item:nth-child(odd) {
-    margin-right: 30px;
+  .features__item:nth-child(3n) {
+    margin-bottom: 0;
   }
   .features__element {
     height: 120px;
@@ -779,7 +780,7 @@ textarea {
   }
   .clients__item {
     height: 92px;
-    flex-basis: calc((100% - 30px) / 3);
+    flex-basis: calc((100% - 60px) / 3);
   }
 }
 @media screen and (min-width: 1200px) {
