@@ -32,14 +32,15 @@
               <a
                 class="site-nav__link site-nav__link--current"
                 href="./index.html"
+                id="studio"
                 >Студія</a
               >
             </li>
             <li class="site-nav__item">
-              <a class="site-nav__link" href="./portfolio.html">Портфоліо</a>
+              <a class="site-nav__link" href="./portfolio.html" id="portfolio">Портфоліо</a>
             </li>
             <li class="site-nav__item">
-              <a class="site-nav__link" href="#">Контакти</a>
+              <a class="site-nav__link" href="#" id = "contacts">Контакти</a>
             </li>
           </ul>
         </nav>
@@ -66,6 +67,15 @@
             </a>
           </li>
         </ul>
+        <ul class="language__selectors">
+          <li class="language__elem">
+            <a href="#eng" class="language__link" data-reload>Eng</a>
+          </li>
+          <li class="language__elem">
+            <a href="#ukr" class="language__link" data-reload>Ukr</a>
+          </li>
+        </ul>
+
       </div>
       <!-- Mobile Menu -->
       <div class="mobile-menu" data-menu>
@@ -80,14 +90,15 @@
               <a
                 class="mobile-nav__link mobile-nav__link--current"
                 href="./index.html"
+                id="mobileStudio"
                 >Студія</a
               >
             </li>
             <li class="mobile-nav__item">
-              <a class="mobile-nav__link" href="./portfolio.html">Портфоліо</a>
+              <a class="mobile-nav__link" href="./portfolio.html" id="mobilePortfolio">Портфоліо</a>
             </li>
             <li class="mobile-nav__item">
-              <a class="mobile-nav__link" href="#">Контакти</a>
+              <a class="mobile-nav__link" href="#" id="mobileContacts">Контакти</a>
             </li>
           </ul>
           <div>
@@ -127,8 +138,8 @@
     <main>
       <section class="hero hero--overlay">
         <div class="container">
-          <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
-          <button data-modal-open type="button" class="button hero__button">
+          <h1 class="hero__title" id="heroTitle">Ефективні рішення для вашого бізнесу</h1>
+          <button data-modal-open type="button" class="button hero__button" id="orderService">
             Замовити послугу
           </button>
         </div>
@@ -136,7 +147,7 @@
       <!-- Features Section -->
       <section class="section">
         <div class="container">
-          <h2 class="section__title visually-hidden">Наші переваги</h2>
+          <h2 class="section__title visually-hidden" id="ourBenefits">Наші переваги</h2>
           <ul class="features">
             <li class="features__item">
               <div class="features__element">
@@ -144,8 +155,8 @@
                   <use href="./images/icons.svg#icon-antenna"></use>
                 </svg>
               </div>
-              <h3 class="features__title">Увага до деталей</h3>
-              <p>
+              <h3 class="features__title" id="attentionToDetails">Увага до деталей</h3>
+              <p id="ideas">
                 Ідейні міркування, і навіть початок повсякденної роботи з
                 формування позиції.
               </p>
@@ -156,8 +167,8 @@
                   <use href="./images/icons.svg#icon-clock"></use>
                 </svg>
               </div>
-              <h3 class="features__title">Пунктуальність</h3>
-              <p>
+              <h3 class="features__title" id="punctuality">Пунктуальність</h3>
+              <p id="punctualityParagraph">
                 Завдання організації, особливо рамки і місце навчання кадрів
                 тягне у себе.
               </p>
@@ -168,8 +179,8 @@
                   <use href="./images/icons.svg#icon-diagram"></use>
                 </svg>
               </div>
-              <h3 class="features__title">Планування</h3>
-              <p>
+              <h3 class="features__title" id = "planning">Планування</h3>
+              <p id = "planningParagraph">
                 Так само консультація з широким активом значною мірою зумовлює.
               </p>
             </li>
@@ -179,8 +190,8 @@
                   <use href="./images/icons.svg#icon-astronaut"></use>
                 </svg>
               </div>
-              <h3 class="features__title">Сучасні технології</h3>
-              <p>
+              <h3 class="features__title" id  ="technologies">Сучасні технології</h3>
+              <p id="technologiesParagraph">
                 Значимість цих проблем настільки очевидна, що реалізація
                 планових завдань.
               </p>
@@ -191,7 +202,7 @@
       <!-- Our Work Section -->
       <section class="section section--no-padding-top">
         <div class="container">
-          <h2 class="section__title">Чим ми займаємося</h2>
+          <h2 class="section__title" id="whatAreWe">Чим ми займаємося</h2>
           <ul class="our-work">
             <li class="our-work__item">
               <picture>
@@ -209,7 +220,7 @@
                   width="370"
                 />
               </picture>
-              <h3 class="our-work__title">Десктопні додатки</h3>
+              <h3 class="our-work__title" id="desktopApp">Десктопні додатки</h3>
             </li>
             <li class="our-work__item">
               <picture>
@@ -227,7 +238,7 @@
                   width="370"
                 />
               </picture>
-              <h3 class="our-work__title">Мобільні додатки</h3>
+              <h3 class="our-work__title" id = "mobileApp">Мобільні додатки</h3>
             </li>
             <li class="our-work__item">
               <picture>
@@ -245,7 +256,7 @@
                   width="370"
                 />
               </picture>
-              <h3 class="our-work__title">Дизайнерські рішення</h3>
+              <h3 class="our-work__title" id="designs">Дизайнерські рішення</h3>
             </li>
           </ul>
         </div>
@@ -253,7 +264,7 @@
       <!-- Team Section -->
       <section class="section section--other-background">
         <div class="container">
-          <h2 class="section__title">Наша команда</h2>
+          <h2 class="section__title" id="team">Наша команда</h2>
           <ul class="team">
             <li class="team__item">
               <picture>
@@ -286,7 +297,7 @@
                 />
               </picture>
               <div class="team__box">
-                <h3 class="team__title">Ігор Дем'яненко</h3>
+                <h3 class="team__title" id="teamMember1">Ігор Дем'яненко</h3>
                 <p class="team__text">Product Designer</p>
                 <ul class="social">
                   <li class="social__item">
@@ -351,7 +362,7 @@
                 />
               </picture>
               <div class="team__box">
-                <h3 class="team__title">Ольга Рєпіна</h3>
+                <h3 class="team__title" id="teamMember2">Ольга Ріпина</h3>
                 <p class="team__text">Frontend Developer</p>
                 <ul class="social">
                   <li class="social__item">
@@ -416,7 +427,7 @@
                 />
               </picture>
               <div class="team__box">
-                <h3 class="team__title">Микола Тарасов</h3>
+                <h3 class="team__title" id="teamMember3">Микола Тарасов</h3>
                 <p class="team__text">Marketing</p>
                 <ul class="social">
                   <li class="social__item">
@@ -481,7 +492,7 @@
                 />
               </picture>
               <div class="team__box">
-                <h3 class="team__title">Михайло Єрмаков</h3>
+                <h3 class="team__title" id="teamMember4">Михайло Єрмаков</h3>
                 <p class="team__text">UI Designer</p>
                 <ul class="social">
                   <li class="social__item">
@@ -521,7 +532,7 @@
       <!-- Clients -->
       <section class="section">
         <div class="container">
-          <h2 class="section__title">Постійні клієнти</h2>
+          <h2 class="section__title" id="regularCustomers">Постійні клієнти</h2>
           <ul class="clients">
             <li class="clients__item">
               <a class="clients__link" href="">
@@ -584,6 +595,7 @@
                   <a
                     class="address__place"
                     href="https://goo.gl/maps/eVDQn7iz8JDgrQ8e7"
+                    id="address"
                     >м. Київ, пр-т Лесі Українки, 26
                   </a>
                 </li>
@@ -602,7 +614,7 @@
           </div>
           <!-- Social Media Footer -->
           <div class="footer__block">
-            <h4 class="footer__title">Приєднуйтесь</h4>
+            <h4 class="footer__title" id="joinIn">Приєднуйтесь</h4>
             <div class="social footer__social">
               <ul class="social">
                 <li class="social__item">
@@ -639,7 +651,8 @@
           <!-- Form Footer -->
 
           <form class="subscribe">
-            <label class="subscribe__title" for="user-mail"
+            <label class="subscribe__title" for="user-mail" 
+              id="subscribeTitle"
               >Підпишіться на розсилку</label
             >
             <div class="subscribe__field">
@@ -650,7 +663,7 @@
                 placeholder="E-mail"
                 class="subscribe__input"
               />
-              <button class="button subscribe__button" type="submit">
+              <button class="button subscribe__button" type="submit" id="subButton">
                 Підписатися
                 <svg class="button__icon" width="24" height="24">
                   <use href="./images/icons.svg#icon-paper-plane"></use>
@@ -671,9 +684,9 @@
         </button>
         <!-- Modal Form -->
         <form class="main-form">
-          <p class="main-form__title">Залиште свої дані, ми вам передзвонимо</p>
+          <p class="main-form__title" id="modalTitle">Залиште свої дані, ми вам передзвонимо</p>
           <div class="main-form__field">
-            <label for="name" class="main-form__label">Ім'я</label>
+            <label for="name" class="main-form__label" id="firstname">Ім'я</label>
             <div class="main-form__wrapper">
               <input
                 type="text"
@@ -688,7 +701,7 @@
             </div>
           </div>
           <div class="main-form__field">
-            <label for="tel" class="main-form__label">Телефон</label>
+            <label for="tel" class="main-form__label" id="phone">Телефон</label>
             <div class="main-form__wrapper">
               <input type="tel" name="tel" id="tel" class="main-form__input" />
               <svg class="main-form__icon" width="18" height="18">
@@ -697,7 +710,7 @@
             </div>
           </div>
           <div class="main-form__field">
-            <label for="mail" class="main-form__label">Пошта</label>
+            <label for="mail" class="main-form__label" id="ePost">Пошта</label>
             <div class="main-form__wrapper">
               <input
                 type="email"
@@ -711,7 +724,7 @@
             </div>
           </div>
           <div class="main-form__field">
-            <label for="comment" class="main-form__label">Коментар</label>
+            <label for="comment" class="main-form__label" id="commentar">Коментар</label>
             <textarea
               name="comment"
               id="comment"
@@ -732,13 +745,13 @@
                   <use href="./images/icons.svg#icon-tick"></use>
                 </svg>
               </span>
-              <span
+              <span id="agree"
                 >Погоджуюся з розсилкою та приймаю
-                <a href="" class="main-form__contract">Умови договору</a></span
+                <a href="" class="main-form__contract" id="zzz">Умови договору</a></span
               >
             </label>
           </div>
-          <button type="submit" class="button main-form__button">
+          <button type="submit" class="button main-form__button" id="sendBtn">
             Відправити
           </button>
         </form>
@@ -746,5 +759,7 @@
     </div>
     <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js"></script>
+    <script type = "module" src="./js/lang-select.js"></script>
+    
   </body>
 </html>
