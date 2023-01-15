@@ -1,12 +1,12 @@
-let dataReload = document.querySelectorAll(["data-reload"])
-console.log(dataReload)
-
 // to minimize code, data is imported from json file
 import language from './dict.json' assert {type: 'json'};
 
-// Define language via window hash
-if (window.location.hash) {
-    if (window.location.hash === "#eng") {
+
+// All text is changed when location hash is set to English, page reloads on click, and vice versa. 
+ 
+  if (location.hash.substring(1) === "ukr") {
+  }
+  else if (location.hash.substring(1) === "eng") {
     studio.textContent = language.eng.studio;
     portfolio.textContent = language.eng.portfolio;
     contacts.textContent = language.eng.contacts;
@@ -44,16 +44,36 @@ if (window.location.hash) {
     ePost.textContent = language.eng.ePost;
     phone.textContent = language.eng.phone;
     firstname.textContent = language.eng.firstname;
-    agree.textContent = language.eng.agree;
-    // zzz.textContent = language.eng.zzz;
+    conditions.textContent = language.eng.conditions;
+    document.querySelector('#agree').firstChild.nodeValue = language.eng.agree;
+    document.getElementById("comment").setAttribute("placeholder", language.eng.placeholder);
+    document.querySelector("#portfolio").setAttribute("href", "./portfolio.html#eng");
+    document.querySelector("#mobilePortfolio").setAttribute("href", "./portfolio.html#eng");
+    
+    document.querySelector("#studio").setAttribute("href", "./index.html#eng");
+    document.querySelector("#mobileStudio").setAttribute("href", "./index.html#eng")
     
 }
-}
 
-     
-    for (let i=0; i<=dataReload.length; i++) {
-        console.log (i)
-        dataReload[i].onclick = function () {
-            location.reload(true)
-        }
-    };
+document.getElementById("ukr").addEventListener('click', function() {
+  window.location.hash = "#ukr"
+  location.reload(true);
+});
+
+document.getElementById("eng").addEventListener('click', function() {
+  window.location.hash = "#eng"
+  location.reload(true);
+});
+
+document.getElementById("ukrMob").addEventListener('click', function() {
+  window.location.hash = "#ukr"
+  location.reload(true);
+});
+
+document.getElementById("engMob").addEventListener('click', function() {
+  window.location.hash = "#eng"
+  location.reload(true);
+});
+
+
+
